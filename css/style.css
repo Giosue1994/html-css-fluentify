@@ -1,0 +1,306 @@
+/* ________ RESTET ________ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ________ FINE RESTET ________ */
+
+/* ________ REGOLE GENERALI  ________ */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.col {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/* ________ FINE REGOLE GENERALI  ________ */
+
+/* ________ HEADER  ________ */
+/* Background */
+header {
+  background-color: #213968;
+  background-image: url(../img/background-header.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 110% 100%;
+  color: white;
+  position: relative;
+  height: 600px;
+}
+/* Fien Background */
+
+/* Colonne */
+header .container .logo{
+  width: 20%;
+}
+header .container .menu-uno{
+  width: 45%;
+}
+header .container .menu-due{
+  width: 35%;
+  text-align: right;
+}
+/* menu */
+header .container .col ul li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 15px 0;
+  font-size: 13px;
+}
+
+header .container .col ul a:hover,
+header .container .titolo a:hover span {
+  font-weight: bold;
+
+}
+
+header .container .col ul li #login {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+header .container .col ul li #login:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+header .container .col ul .piano {
+  background-color: #00df00;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+header .container .col ul .piano:hover {
+  background-color: green;
+}
+/* fine menu */
+/* Fine colonne */
+
+/* Titolo */
+header .container .titolo {
+  width: 50%;
+  font-size: 30px;
+  margin: 130px 0;
+}
+
+header .container .titolo h1 {
+  padding: 35px 0;
+}
+
+header .container .titolo span {
+  padding: 20px;
+  font-size: 15px;
+  background-color: #00df00;
+  border-radius: 5px;
+}
+
+header .container .titolo span:hover {
+  background-color: green;
+}
+/* Fine Titolo */
+/* ________ FINE HEADER  ________ */
+
+/* ________ MAIN ________ */
+/* Intestazione */
+main .intestazione {
+  background: lightgrey;
+  text-align: center;
+  padding: 35px 0;
+}
+
+main h2 {
+  font-size: 30px;
+}
+
+main p {
+  color: grey;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+/* Fine Intestazione */
+
+/* Prima riga */
+main .riga {
+  margin-bottom: 40px;
+}
+
+main .riga .container .left,
+main .riga .container .center,
+main .riga .container .right {
+  width: 30%;
+}
+
+main .riga .container .center {
+  margin: 0 5%;
+}
+
+/* box prima riga */
+main .riga .container .col .box {
+text-align: center;
+}
+
+main .riga .container .col .box .rigaimg {
+  display: inline-block;
+}
+
+
+main .riga .container .col .box .rigaimg img {
+  width: 100%;
+  padding: 30px 0;
+}
+
+main .riga .container .col .box h2 {
+color: #00df00;
+}
+
+/* hr */
+main .riga .container .col .box hr {
+  width: 20%;
+  margin: 30px auto;
+  border: 1px solid lightgrey;
+}
+
+/* fine box prima riga */
+main hr {
+  width: 98%;
+  margin: 30px auto;
+  border: 0.5px solid lightgrey;
+}
+/* fine hr */
+/* Fine prima riga */
+
+/* Seconda riga */
+main .riga .container .one,
+main .riga .container .two {
+  width: 46%;
+}
+
+main .riga .container .two {
+  margin-left: 8%;
+}
+/* box seconda riga */
+main .riga .container .col .box-one,
+main .riga .container .col .box-two {
+  width: 85%;
+  margin: auto;
+}
+
+main .riga .container .col .box-two h2,
+main .riga .container .col .box-two p {
+  text-align: left;
+  width: 70%;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+main .riga .container .col .box-two a {
+  text-decoration: underline;
+  color: blue;
+}
+
+main .riga .container .col .box-two a:hover {
+  text-decoration: underline;
+  color: lightblue;
+}
+/* fine box seconda riga */
+/* Fine seconda riga */
+/* ________ FINE MAIN  ________ */
+
+/* ________ FOOTER  ________ */
+/* Terza riga */
+footer {
+  background: lightgrey;
+  padding: 48px 0;
+  font-size: 20px;
+}
+
+footer .riga .container .one,
+footer .riga .container .two {
+  width: 46%;
+}
+
+footer .riga .container .two {
+  margin-left: 8%;
+}
+/* box terza riga */
+footer .riga .container .col .box-two {
+  text-align: right;
+}
+
+footer .riga .container .col .box-two form {
+  color: grey;
+  font-size: 18px;
+}
+
+footer .riga .container .col .box-two form label {
+  margin-right: 20px;
+}
+
+footer .riga .container .col .box-two form select {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  color: grey;
+  font-size: 18px;
+  padding-right: 50px;
+  margin-right: 30px;
+}
+
+footer .riga .container .col span {
+  padding: 20px;
+  font-size: 15px;
+  background-color: #00df00;
+  border-radius: 5px;
+}
+
+footer .riga .container .col span:hover,
+footer .riga .container .help:hover {
+  background-color: green;
+  font-weight: bold;
+  }
+/* fine box terza riga */
+
+/* TASTO HELP */
+footer .riga .container .help {
+  position: fixed;
+  background-color: #00df00;
+  font-size: 15px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  bottom: 0;
+  right: 15%;
+  text-decoration: none;
+  }
+
+  footer .riga .container .help:hover {
+    background-color: green;
+    font-weight: bold;
+  }
+  /* FINE TASTO HELP */
+  /* Fine terza riga */
+/* ________ FINE FOOTER  ________ */
